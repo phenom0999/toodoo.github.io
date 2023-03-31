@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Rubik:wght@400;500;600&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.header{
+    position: relative;
+    height:75vh;
+    background: url("./bgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(254,255,255,255);
+    font-size: 2.5rem;
+    font-weight:700;
+}
+ul{
+    color: white;
+    margin: 0px 15px;
+}
+
+.logo{
+    margin: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(75,79,88,255);
+    font-size: 70%;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#signup {
+    font-size: 70%;
+    color:rgba(15,15,23,1);
+    font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.container{
+    max-width: 1500px;
+    margin:auto;
+    width: 100%;
+}
+
+.nav {
+    min-height: 12vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    width: 57%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.headline {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-headline {
+    padding: 0.3rem 01rem;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    color:rgba(15,15,23,1);
+    background-image:linear-gradient(to bottom, rgba(244,159,104,255), rgba(255,128,73,255));
+    opacity: 0.85;
+    font-weight: 700;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 100px;
+    border-bottom: solid;
+}
+
+.streak {
+    display: flex;
+    justify-content:space-around;
+    text-align: center; 
+    color:rgba(254,255,255,255);
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+
+}
+
+.streak-bg{
+    border-top: outset;
+    border-width: 2px;
+    border-color: rgba(15,18,27,255);
+    background-image: linear-gradient(rgba(61,68,78,255), rgba(15,18,27,255));
+    height: 25vh;
+}
+
+@media only screen and (max-width: 710px){
+    .header{
+        font-size: 1.8rem;
+    }
+
+    .btn-headline {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .header{
+        
+        font-size: 1.5rem;
+        
+        
+    }
+
+    ul{
+        margin: 0px 5px;
+    }
+
+    .btn-headline {
+        font-size: 1.7rem;
+    }
+
+    .nav {
+        min-height: 11vh;
+    }
+
+    .streak {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media only screen and (max-width: 440px){
+    .header{
+        
+        font-size: 1.4rem;
+        
+        
+    }
+
+    ul{
+        margin: 0px 2px;
+    }
+
+
+    .btn-headline {
+        font-size: 1.3rem;
+    }
+
+    .nav {
+        min-height: 9vh;
+    }
+
+    .streak {
+        font-size: 0.80rem;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .header{
+        
+        font-size: 1.175rem;
+        
+        
+    }
+
+    ul{
+        margin: 0px 2px;
+    }
+
+
+    .btn-headline {
+        font-size: 1.3rem;
+    }
+
+    .nav {
+        min-height: 7vh;
+    }
+
+    .streak {
+        font-size: 0.75rem;
+    }
+
+}
